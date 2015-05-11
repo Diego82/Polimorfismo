@@ -4,6 +4,8 @@ public abstract class PoligonoRegular implements Comparable<PoligonoRegular>  {
 	protected String nombre;
 	protected int numeroLados;
 	protected double longitudLado;
+	int numeroObjeto = 0;
+	
 	/**
 	 * @param nombre
 	 * @param numeroLados
@@ -41,6 +43,17 @@ public abstract class PoligonoRegular implements Comparable<PoligonoRegular>  {
 	}
 	
 	public abstract double getAreaPoligono();
+	
+	
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "PoligonoRegular [nombre: " + nombre + ", numeroLados: "
+				+ numeroLados + ", longitudLado: " + longitudLado + "]";
+	}
 
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
@@ -75,9 +88,9 @@ public abstract class PoligonoRegular implements Comparable<PoligonoRegular>  {
 			return false;
 		return true;
 	}
-	
+
 	public int compareTo(PoligonoRegular p){
-		return this.numeroLados-p.getNumeroLados();
+		return this.numeroLados-p.numeroLados;
 	}
 	
 }
