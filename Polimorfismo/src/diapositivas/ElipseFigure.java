@@ -2,7 +2,6 @@ package diapositivas;
 
 public class ElipseFigure extends CircularFigure {
 
-		
 	public ElipseFigure(double semiEjeMenor, double semiEjeMayor) {
 		super(semiEjeMenor, semiEjeMayor);
 		// TODO Auto-generated constructor stub
