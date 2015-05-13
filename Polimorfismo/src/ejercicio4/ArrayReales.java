@@ -50,8 +50,9 @@ public class ArrayReales implements Estadistica {
 		if (this.valores.length>0) {
 			double suma = 0;
 			for (int i = 0; i < valores.length; i++) {
-				return suma+= valores[i];
+				suma+= valores[i];
 			}
+			return suma;
 		}
 		else{
 			System.out.println("Array vacio");

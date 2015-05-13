@@ -13,7 +13,7 @@ public class TestVehiculo {
 			System.out.println("Acelerando coche a "+aceleracionCoche+"\n"+coche.acelerar(aceleracionCoche));
 			System.out.println("Acelerando moto a "+aceleracionMoto+"\n"+moto.acelerar(aceleracionMoto));
 			System.out.println("Desacelerando coche a "+desaceleracionCoche+"\n"+coche.frenar(desaceleracionCoche));
-			System.out.println("Acelerando moto a "+desaceleracionMoto+"\n"+moto.frenar(desaceleracionMoto));
+			System.out.println("Desacelerando moto a "+desaceleracionMoto+"\n"+moto.frenar(desaceleracionMoto));
 			
 		}
 		

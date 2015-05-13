@@ -11,8 +11,9 @@ public class Coche implements Vehiculo {
 	@Override
 	public String acelerar(int velocidad) {
 		// TODO Auto-generated method stub
-		String mensaje = "coche con velocidad actual de "+this.velocidad+velocidad;
-		if (this.velocidad+velocidad>VELOCIDAD_MAXIMA) {
+		this.velocidad+=velocidad;
+		String mensaje = "coche con velocidad actual de "+this.velocidad;
+		if ((this.velocidad+velocidad)>VELOCIDAD_MAXIMA) {
 			mensaje += " y has superado la velocidad maxima";
 		}
 		
@@ -29,7 +30,7 @@ public class Coche implements Vehiculo {
 		else
 			this.velocidad-=velocidad;
 		
-		String mensaje = "coche con velocidad actual de "+this.velocidad+velocidad;
+		String mensaje = "coche con velocidad actual de "+this.velocidad;
 		if (this.velocidad > VELOCIDAD_MAXIMA) {
 			mensaje += " sigues superando la velocidad maxima";
 		}

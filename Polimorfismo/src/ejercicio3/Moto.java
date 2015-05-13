@@ -11,27 +11,25 @@ private int velocidad = 0;
 	@Override
 	public String acelerar(int velocidad) {
 		// TODO Auto-generated method stub
-		String mensaje = "coche con velocidad actual de "+this.velocidad+velocidad;
-		if (this.velocidad+velocidad>VELOCIDAD_MAXIMA) {
+		this.velocidad+=velocidad;
+		String mensaje = "Moto con velocidad actual de "+this.velocidad;
+		if (this.velocidad>VELOCIDAD_MAXIMA) {
 			mensaje += " y has superado la velocidad maxima";
 		}
-		
 		return mensaje;
 	}
 
 	@Override
 	public String frenar(int velocidad) {
 		// TODO Auto-generated method stub
-		
-		if (this.velocidad-velocidad<0) {
+		this.velocidad-=velocidad;
+		if (this.velocidad<0) {
 			this.velocidad=0;
 		}
-		else
-			this.velocidad-=velocidad;
 		
-		String mensaje = "coche con velocidad actual de "+this.velocidad+velocidad;
+		String mensaje = "Moto con velocidad actual de "+this.velocidad;
 		if (this.velocidad > VELOCIDAD_MAXIMA) {
-			mensaje += " sigues superando la velocidad maxima";
+			mensaje += " y sigues superando la velocidad maxima";
 		}
 		return mensaje;
 	}
